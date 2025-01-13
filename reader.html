@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de PDF</title>
+    <link rel="stylesheet" href="reader.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <button id="backToShelf">Voltar à Estante</button>
+        <div id="bookInfo">Leitura do Livro</div>
+    </div>
+    <div class="navigation">
+        <button id="prevPage">Página Anterior</button>
+        <button id="nextPage">Próxima Página</button>
+    </div>
+    <canvas id="pdfCanvas"></canvas>
+
+    <div class="progress-container">
+        <div class="progress-bar">
+            <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-text" id="progressText">Progresso: 0%</div>
+    </div>
+
+    <script src="reader.js"></script>
+</body>
+</html>
